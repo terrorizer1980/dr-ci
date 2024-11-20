@@ -4,7 +4,7 @@
 # https://www.reddit.com/r/haskell/comments/cl5uod/optimized_docker_builds_for_haskell/
 
 # -------------------------------------------------------------------------------------------
-FROM ubuntu:16.04 as appbase
+FROM ubuntu:xenial-20210114 as appbase
 
 RUN apt-get update \
   && apt-get install -y libgmp10 libpq5 libssl1.0.0 libgssapi-krb5-2 libldap-2.4-2 netbase ca-certificates llvm
